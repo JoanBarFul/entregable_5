@@ -14,9 +14,9 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnObstacle()
     {
-        randomY = Random.Range(10, -11);
+        randomY = Random.Range(10, -11); 
+        // He posat de 10 a -11 perque si pos -10 aquest no podria sortir
         spawnPos = new Vector3(0, randomY, spawnPos.z + 50);
         Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
-      
     }
 }
